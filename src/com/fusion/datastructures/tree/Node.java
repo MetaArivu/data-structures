@@ -62,8 +62,8 @@ public class Node implements Comparable<Node> {
 	 * @param _nodeId
 	 */
 	public Node(String _nodeId, Node _parent) {
-		nodeId 		= (_nodeId != null) ? _nodeId : "1";
-		nodeLevel 	=  new StringTokenizer(_nodeId, ".").countTokens();
+		nodeId 		= (_nodeId != null) ? _nodeId : "Root";
+		nodeLevel 	=  (nodeId.equalsIgnoreCase("Root")) ? 0 : new StringTokenizer(_nodeId, ".").countTokens();
 		nodes 		= new ArrayList<Node>();
 		parent 		= _parent;
 	}
@@ -162,7 +162,7 @@ public class Node implements Comparable<Node> {
 	 */
 	public void printNodes() {
 		String t = getTabs(nodeLevel);
-		System.out.println("Node> "+t+nodeId);
+		System.out.println(t+nodeId);
 		for(Node n : nodes) {
 			n.printNodes();
 		}
