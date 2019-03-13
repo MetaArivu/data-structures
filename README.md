@@ -45,7 +45,8 @@ Sample Data (Node ID) in Rows
 1.6
 1.6.1
 
-This unsorted data will be sorted and creates a tree structure. Ideally when you fetch the data from the Database you can get the data sorted based on Node ID.
+This unsorted data will be sorted and creates a tree structure. 
+Ideally when you fetch the data from the Database you can get the data sorted based on Node ID.
 
 Tree Data - After Sorting the Data -=-=-=-=-=-=-=-=-=-=-=-=-
 Root
