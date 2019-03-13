@@ -3,6 +3,7 @@ Data Structures - Converting Table Data (Rows and Columns) into tree structure.
 
 Following Example shows how to create a Parent Child relationship with a single field in a relational database.
 
+<pre>
 Data Structure in Rows and Columns
 NodeID | Name | Description
 1 | Security | 
@@ -10,6 +11,7 @@ NodeID | Name | Description
 1.1.1 | Vulnerability Assessment
 1.1.2 | Asset Discovery
 1.1.3 | Service Discovery
+
 
 Sample Data (Node ID) in Rows
 
@@ -76,3 +78,5 @@ Root
       3.2.1
       3.2.2
       3.2.3
+      
+</pre>
