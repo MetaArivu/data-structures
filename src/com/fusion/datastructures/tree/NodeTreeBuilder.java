@@ -67,10 +67,12 @@ public class NodeTreeBuilder {
 			nodeMap.put(child.getNodeId(), child);
 			if(child.getNodeLevel() == 1) {
 				root.addNode(child);
+				child.setParent(root);
 			} else {
 				Node parent = getParent(nodeMap, child);
 				if(parent != null) {
 					parent.addNode(child);
+					child.setParent(parent);
 				}
 			}
 			

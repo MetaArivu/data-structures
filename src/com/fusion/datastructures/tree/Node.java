@@ -162,7 +162,8 @@ public class Node implements Comparable<Node> {
 	 */
 	public void printNodes() {
 		String t = getTabs(nodeLevel);
-		System.out.println(t+nodeId);
+		String pid = (parent != null) ? parent.toString() : "God";
+		System.out.println(t+nodeId+"\t\t Child of >> "+pid);
 		for(Node n : nodes) {
 			n.printNodes();
 		}
